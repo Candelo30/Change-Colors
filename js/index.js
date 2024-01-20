@@ -68,11 +68,6 @@ reset.addEventListener('click', e=> {
 
 Change_theme.addEventListener('click', e=>{
     document.body.classList.toggle("dark");
-    if (document.body.classList.contains("dark")) {
-      NewColor.style.backgroundColor = "rgb(22, 21, 21)";
-    } else {
-      NewColor.style.backgroundColor = "#fff";
-    }
 })
 
 function generarColorAleatorio() {
@@ -81,7 +76,7 @@ function generarColorAleatorio() {
 }
 
 Random.addEventListener('click', e=> {
-  var color = generarColorAleatorio();
+  let color = generarColorAleatorio();
   NewColor.style.background = color;
   reset.style.borderColor = color;
   Change_theme.style.borderColor = color;
