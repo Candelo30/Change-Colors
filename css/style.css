@@ -10,6 +10,11 @@ body {
   margin: 0;
 }
 
+body.dark {
+  background-color: #000;
+  color: #fff;
+}
+
 header {
   position: relative;
   background-color: white;
@@ -17,6 +22,13 @@ header {
   padding: 10px;
   display: flex;
   align-items: center;
+  transition: all 0.5s ease;
+  justify-content: space-between;
+}
+
+body.dark header {
+  background-color: #000;
+  color: #fff;
 }
 
 .brand {
@@ -42,9 +54,17 @@ aside {
   flex-basis: 10%;
   height: 94.1vh;
   padding: 5px;
+  transition: all 0.5s ease;
 }
 
-.reset {
+body.dark aside {
+  background-color: #000;
+  color: #fff;
+}
+
+.reset,
+.Random,
+.Change_theme {
   padding: 10px 40px;
   border-radius: 4px;
   background-color: rgb(255, 255, 255);
@@ -52,9 +72,19 @@ aside {
   font-size: 16px;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.75);
   cursor: pointer;
+  transition: all 0.5s ease;
 }
 
-.reset:hover {
+body.dark .reset,
+body.dark .Random,
+body.dark .Change_theme {
+  background-color: rgb(22, 21, 21);
+  color: #fff;
+}
+
+.reset:hover,
+.Random:hover,
+.Change_theme:hover {
   transform: translateY(1px);
 }
 
@@ -102,6 +132,11 @@ aside {
   width: 50%;
   height: 50%;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.75);
+  transition: all 0.5s ease;
+}
+
+body.dark .NewColor {
+  background-color: rgb(22, 21, 21);
 }
 
 footer {
@@ -110,6 +145,11 @@ footer {
   background-color: rgb(247, 247, 247);
   border-bottom-right-radius: 40px;
   border: #b6f3b4 5px dashed;
+  transition: all 0.5s ease;
+}
+
+body.dark footer {
+  background-color: rgb(22, 21, 21);
 }
 
 .social {
@@ -123,6 +163,10 @@ footer {
   text-decoration: none;
   color: #000;
   padding: 20px 30px;
+}
+
+body.dark .social a {
+  color: #fff;
 }
 
 .social a i {
