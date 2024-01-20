@@ -52,7 +52,7 @@ aside {
   border: solid 2px #b6f3b4;
   border-top: none;
   flex-basis: 10%;
-  height: 94.1vh;
+  height: 92.1vh;
   padding: 5px;
   transition: all 0.5s ease;
 }
@@ -120,7 +120,7 @@ body.dark .Change_theme {
 
 .color-change {
   flex-basis: 90%;
-  height: 94.1vh;
+  height: 92.1vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -137,6 +137,7 @@ body.dark .Change_theme {
 
 body.dark .NewColor {
   background-color: rgb(22, 21, 21);
+  box-shadow: 1px 1px 10px rgba(248, 248, 248, 0.75);
 }
 
 footer {
